@@ -1,10 +1,10 @@
 {
   "name": "batch-scheduler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "backwords-chainer": "^1.0.3"
+    "backwords-chainer": "^1.0.5"
   },
   "devDependencies": {
     "jest": "^20.0.4"

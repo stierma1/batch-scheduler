@@ -8,6 +8,7 @@ var myBox = {"box":1};
 var myOtherBox = {"otherBox": 2}
 var myThirdBox = {"thirdBox": 3}
 
+var t = Date.now();
 console.log(
   batchSchedule([myTask, yourTask, thirdTask],
     [[myTask, "l1"], [yourTask, "l1"], [thirdTask, "l1"]],
@@ -16,12 +17,14 @@ console.log(
     [myTask,yourTask,thirdTask]
   )
 )
-
-console.log(
-  batchSchedule([myTask, yourTask, thirdTask],
-    [[myTask, "l1"], [yourTask, "l1"], [thirdTask, "l1"]],
-    [myBox, myOtherBox, myThirdBox],
-    [[myBox, "l1"], [myOtherBox, "l1"], [myThirdBox, "l1"]],
-    [myTask, yourTask,thirdTask]
+console.log(Date.now() - t);
+  var t = Date.now()
+  console.log(
+    batchSchedule([myTask, yourTask, thirdTask],
+      [[myTask, "l1"], [yourTask, "l1"], [thirdTask, "l1"]],
+      [myBox, myOtherBox, myThirdBox],
+      [[myBox, "l1"], [myOtherBox, "l1"], [myThirdBox, "l1"]],
+      [myTask, yourTask,thirdTask]
+    )
   )
-)
+  console.log(Date.now() - t);
